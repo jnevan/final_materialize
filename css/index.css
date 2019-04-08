@@ -1,0 +1,31 @@
+
+div[class*="columna"]{
+  min-height: 50rem;
+}
+
+.columna-news{
+  padding: 0 !important;
+}
+
+.responsive-img{
+  border: 0.6rem solid #ff8f00;
+  border-radius: 5px;
+}
+.buscar-campo{
+  float: left;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 70%;
+}
+.barra-superior .row{
+  margin-bottom: 0;
+}
+.contenedor-botones{
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .columna-grupos{
+    padding: 0 !important;
+  }
+}

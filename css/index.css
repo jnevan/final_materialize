@@ -1,9 +1,35 @@
-div[class*="columna"]{
-  margin-top: 1rem;
+body{
+	background:url(../img/background.jpg) bottom fixed no-repeat,
+	#03a9f4;
+			
+/*	background-attachment: fixed; 
+	background-repeat: no-repeat; */
+/*	background-position: center; */
+	
 }
-
-.columna-news{
-  padding: 0 !important;
+div[class*="columna"]{
+  margin-top: 2rem;
+  background:trasparent
+}
+nav{
+	background:none;
+	box-shadow:none;
+}
+nav ul a.btn{
+	     margin-left: 0;
+		 padding: 0 0.5rem; 
+}
+.left h4 {
+ position: relative;
+ bottom:1rem;
+ color:#fff;
+}
+i.left {
+    float: left;
+    margin-top: -10px;
+}
+.cabecera{
+  height:7rem;
 }
 
 .responsive-img{
@@ -14,8 +40,10 @@ div[class*="columna"]{
 	background: #222;
 }
 .logo-img{
-	width: 40px;
-	margin-top: 0.5rem;
+	width: 100px;
+	position: relative;
+	margin-left: 5rem;
+	top:3rem;
 	float: left;
 	border-radius: 5px;
 	border–top: 1px solid #444;
@@ -29,15 +57,44 @@ div[class*="columna"]{
   margin-top: 0.5rem;
   width: 70%;
 }
-.barra-superior .row{
-  margin-bottom: 0;
-}
+
 .contenedor-botones{
   margin-top: 1rem;
 }
+.btn-social {
+    display: inline-block;
+    background-color:#fff !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 53px;
+    height: 53px;
+	margin-top:2rem;
+    border-radius: 5%;
+    transition: .3s;
+    cursor: pointer;
+    vertical-align: middle;
+}
+@media screen and (max-width: 992px) {
+nav ul a span{
+	    display:none; 
+}
+.logo-img{
 
-@media (max-width: 600px) {
+	margin-left: 0.4rem;
+}
+@media (max-width: 767px) {
   .columna-grupos{
     padding: 0 !important;
   }
+nav ul {
+    /* margin: 0; */
+    margin-top: -5rem;
+}
+.logo-img{
+	top:1rem;
+}
+.left h4 {
+ bottom:0;
+}
 }

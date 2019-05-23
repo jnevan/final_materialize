@@ -8,9 +8,10 @@ body{
 	
 }
 div[class*="columna"]{
-  margin-top: 2rem;
-  background:trasparent
+  margin-top: 1rem;
+  padding:1rem !important
 }
+
 nav{
 	background:none;
 	box-shadow:none;
@@ -21,23 +22,20 @@ nav ul a.btn{
 }
 .left h4 {
  position: relative;
- bottom:1rem;
+ bottom:0.5rem;
  color:#fff;
 }
-i.left {
+nav ul a.btn>i.left {
     float: left;
-    margin-top: -10px;
+    margin-top: -12px;
 }
 .cabecera{
   height:7rem;
 }
 
 .responsive-img{
-	border–top: 1px solid #444;
-	border–right: 1px solid #333;
-	border–bottom: 1px solid #000;
-	border–left: 1px solid #333;
-	background: #222;
+	border: 1px outset #90a4ae; 
+	text-shadow: 1px 1px rgba(0,0,0,.2);
 }
 .logo-img{
 	width: 100px;
@@ -46,10 +44,14 @@ i.left {
 	top:3rem;
 	float: left;
 	border-radius: 5px;
-	border–top: 1px solid #444;
-	border–right: 1px solid #333;
-	border–bottom: 1px solid #000;
-	border–left: 1px solid #333;
+	border-top: 1px solid #444;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #333;
+}
+.perfil-img{
+	width: 100px;
+	height: 100px;
 }
 .buscar-campo{
   float: left;
@@ -83,18 +85,20 @@ nav ul a span{
 
 	margin-left: 0.4rem;
 }
-@media (max-width: 767px) {
-  .columna-grupos{
-    padding: 0 !important;
-  }
-nav ul {
-    /* margin: 0; */
-    margin-top: -5rem;
-}
+@media screen and (max-width: 767px) {
+
 .logo-img{
 	top:1rem;
 }
 .left h4 {
  bottom:0;
+}
+
+}
+@media screen and (max-width: 432px) {
+
+nav ul {
+    /* margin: 0; */
+    margin-top: -5rem;
 }
 }
